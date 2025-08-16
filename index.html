@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista - Authentic South African Dining</title>
+    <!-- Use a modern, clean font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f4; /* stone-100 */
+            color: #1f2937; /* gray-900 */
+        }
+        .hero-bg {
+            /* Using a high-quality Unsplash image for the hero section */
+            background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudCUyMGludGVyaW9yfGVufDB8MHwwfHx8MA%3D%3D');
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Bella Vista</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-orange-700 transition-colors duration-300">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-orange-700 transition-colors duration-300">About Us</a>
+                <a href="#menu" class="text-gray-600 hover:text-orange-700 transition-colors duration-300">Menu</a>
+                <a href="#contact" class="text-gray-600 hover:text-orange-700 transition-colors duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 hover:text-orange-700 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white relative">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative z-10 px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Bella Vista</h1>
+                <p class="text-lg md:text-2xl font-medium max-w-2xl mx-auto">Where every meal tells a story of South Africa.</p>
+                <a href="#menu" class="mt-8 inline-block bg-orange-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-orange-800 transition-all duration-300 transform hover:scale-105">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1618681462303-7a8bfebfdcca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc3RhdXJhbnQlMjBiYWNrZ3JvdW5kfGVufDB8MHwwfHx8MA%3D%3D" class="rounded-xl shadow-lg w-full" alt="Restaurant interior">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Story</h2>
+                    <p class="text-gray-600 mb-4">
+                        Nestled in the heart of the city, Bella Vista offers a unique dining experience inspired by the rich and diverse flavors of South Africa. Our menu is a tribute to local traditions, using the freshest ingredients to create dishes that are both comforting and adventurous.
+                    </p>
+                    <p class="text-gray-600">
+                        We believe that food is more than just sustenance; it's a way to connect, share stories, and celebrate community. Come and enjoy a taste of home with us.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-10 text-gray-800">Our Culinary Offerings</h2>
+
+                <!-- Food Menu Items -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <!-- Menu Item 1: Bobotie -->
+                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAHunXnkIoLttmY3bb82AhPBc6diSPeFYCw&s" alt="Bobotie" class="rounded-lg mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Classic Bobotie</h3>
+                        <p class="text-gray-600 mb-4">A savory baked dish of curried mince with a creamy golden topping, served with yellow rice and sambal.</p>
+                        <span class="text-lg font-bold text-orange-700">R150</span>
+                    </div>
+
+                    <!-- Menu Item 2: Braai Platter -->
+                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://cdn.foodloversmarket.co.za/wp-content/uploads/20240118210509/1200x628-3-3.png" alt="Braai Platter" class="rounded-lg mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The Ultimate Braai Platter</h3>
+                        <p class="text-gray-600 mb-4">A selection of traditional braai favorites including boerewors, marinated lamb chops, and chakalaka.</p>
+                        <span class="text-lg font-bold text-orange-700">R250</span>
+                    </div>
+
+                    <!-- Menu Item 3: Malva Pudding -->
+                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUvDClXVPYD38swUJccJKVDGA9mjpjRMkKA&s" alt="Malva Pudding" class="rounded-lg mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Malva Pudding</h3>
+                        <p class="text-gray-600 mb-4">A warm, sweet and sticky dessert, served with a rich caramel sauce and a dollop of vanilla ice cream.</p>
+                        <span class="text-lg font-bold text-orange-700">R85</span>
+                    </div>
+                </div>
+
+                <!-- Drinks Menu Items -->
+                <h3 class="text-2xl md:text-3xl font-bold mb-10 text-gray-800">Refreshing Beverages</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Drink Item 1: Amarula Coffee -->
+                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://crushmag-online.com/wp-content/uploads/2022/08/naked-amarula-1x560-1.jpg" alt="Amarula Coffee" class="rounded-lg mb-4">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Amarula Coffee</h4>
+                        <p class="text-gray-600 mb-4">A decadent coffee with a shot of South Africa's finest cream liqueur, Amarula. Served hot or on the rocks.</p>
+                        <span class="text-lg font-bold text-orange-700">R75</span>
+                    </div>
+
+                    <!-- Drink Item 2: Rooibos Iced Tea -->
+                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aWNlZCUyMHRlYXxlbnwwfDB8MHx8fDI%3D" alt="Rooibos Iced Tea" class="rounded-lg mb-4">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Rooibos Iced Tea</h4>
+                        <p class="text-gray-600 mb-4">A refreshing South African classic, brewed with fresh rooibos tea and a hint of lemon and mint.</p>
+                        <span class="text-lg font-bold text-orange-700">R40</span>
+                    </div>
+
+                    <!-- Drink Item 3: Local Craft Beer -->
+                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVZOqDnP1ApqI8CGjbvLEEZDj2HWp6nZyaA&s" alt="Local Craft Beer" class="rounded-lg mb-4">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Local Craft Beer</h4>
+                        <p class="text-gray-600 mb-4">A rotating selection of the best craft beers from local South African breweries.</p>
+                        <span class="text-lg font-bold text-orange-700">R60</span>
+                    </div>
+                </div>
+
+                <!-- Download Full Menu Button -->
+                <a href="#" download="BellaVista_Menu.pdf" class="mt-12 inline-block bg-orange-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-orange-800 transition-all duration-300 transform hover:scale-105">
+                    Download Full Menu
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">Visit Us</h2>
+                <div class="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto flex flex-col md:flex-row gap-8">
+                    <!-- Contact Info -->
+                    <div class="w-full md:w-1/2 text-left">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                        <p class="text-gray-600 mb-6">
+                            Ready to book a table? Contact us to make a reservation or for any inquiries.
+                        </p>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-semibold text-gray-800">Phone:</p>
+                                <a href="tel:+27111234567" class="text-orange-700 hover:underline">+27 11 123 4567</a>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Email:</p>
+                                <a href="mailto:info@bellavista.co.za" class="text-orange-700 hover:underline">info@bellavista.co.za</a>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Address:</p>
+                                <p class="text-gray-600">123 Main Street, Sandton, Johannesburg, South Africa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reservation Form -->
+                    <div class="w-full md:w-1/2 text-left">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Book a Table</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500">
+                            </div>
+                            <div>
+                                <label for="guests" class="block text-sm font-medium text-gray-700">Number of Guests</label>
+                                <input type="number" id="guests" name="guests" min="1" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500">
+                            </div>
+                            <div>
+                                <label for="date" class="block text-sm font-medium text-gray-700">Date</label>
+                                <input type="date" id="date" name="date" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500">
+                            </div>
+                            <div>
+                                <label for="time" class="block text-sm font-medium text-gray-700">Time</label>
+                                <input type="time" id="time" name="time" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500">
+                            </div>
+                            <div>
+                                <label for="notes" class="block text-sm font-medium text-gray-700">Special Requests</label>
+                                <textarea id="notes" name="notes" rows="3" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500"></textarea>
+                            </div>
+                            <div class="text-center md:text-left">
+                                <button type="submit" class="inline-block bg-orange-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-orange-800 transition-all duration-300 transform hover:scale-105">
+                                    Make a Reservation
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Menu - Modern Slide-in -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-3/4 max-w-sm bg-white shadow-lg z-50 transform translate-x-full transition-transform ease-in-out duration-300">
+        <div class="flex justify-between items-center p-6 border-b border-gray-200">
+            <h3 class="text-xl font-bold">Menu</h3>
+            <button id="close-menu-button" class="text-gray-800 hover:text-orange-700 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col p-6 space-y-4">
+            <a href="#home" class="block text-lg font-medium text-gray-600 hover:bg-gray-100 p-2 rounded-md">Home</a>
+            <a href="#about" class="block text-lg font-medium text-gray-600 hover:bg-gray-100 p-2 rounded-md">About Us</a>
+            <a href="#menu" class="block text-lg font-medium text-gray-600 hover:bg-gray-100 p-2 rounded-md">Menu</a>
+            <a href="#contact" class="block text-lg font-medium text-gray-600 hover:bg-gray-100 p-2 rounded-md">Contact</a>
+        </div>
+    </div>
+    
+    <!-- Overlay for the background -->
+    <div id="menu-overlay" class="fixed inset-0 bg-black opacity-0 transition-opacity duration-300 ease-in-out hidden z-40"></div>
+
+    <!-- Footer - Enhanced with more details -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Company Info -->
+            <div>
+                <h4 class="text-xl font-bold mb-4">Bella Vista</h4>
+                <p class="text-gray-300">Where every meal tells a story of South Africa.</p>
+            </div>
+            
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-xl font-bold mb-4">Contact & Hours</h4>
+                <p class="text-gray-300">Phone: <a href="tel:+27111234567" class="hover:underline">+27 11 123 4567</a></p>
+                <p class="text-gray-300 mb-2">Email: <a href="mailto:info@bellavista.co.za" class="hover:underline">info@bellavista.co.za</a></p>
+                <p class="text-gray-300">Mon - Fri: 11:00 AM - 10:00 PM</p>
+                <p class="text-gray-300">Sat - Sun: 12:00 PM - 11:00 PM</p>
+            </div>
+            
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-xl font-bold mb-4">Follow Us</h4>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Facebook</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Instagram</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Bella Vista. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Functionality -->
+    <script>
+        // Get the necessary elements from the DOM
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+
+        // Function to open the mobile menu
+        function openMobileMenu() {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+            menuOverlay.classList.remove('hidden');
+            setTimeout(() => {
+                menuOverlay.classList.remove('opacity-0');
+                menuOverlay.classList.add('opacity-50');
+            }, 10); // A small delay to ensure transition works
+        }
+
+        // Function to close the mobile menu
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('translate-x-full');
+            menuOverlay.classList.remove('opacity-50');
+            menuOverlay.classList.add('opacity-0');
+            setTimeout(() => {
+                menuOverlay.classList.add('hidden');
+            }, 300); // Wait for the transition to finish before hiding
+        }
+
+        // Add event listeners to the buttons and overlay
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeMenuButton.addEventListener('click', closeMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+
+        // Close menu when a link is clicked
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+    </script>
+
+</body>
+</html>
