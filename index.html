@@ -22,6 +22,27 @@
             background-position: center;
             background-size: cover;
         }
+        /* Card hover effects */
+        .menu-card {
+            transition: all 0.3s ease;
+        }
+        .menu-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .menu-card:hover img {
+            transform: scale(1.05);
+        }
+        .menu-card img {
+            transition: transform 0.3s ease;
+        }
+        .contact-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -82,24 +103,30 @@
                 <!-- Food Menu Items -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     <!-- Menu Item 1: Bobotie -->
-                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAHunXnkIoLttmY3bb82AhPBc6diSPeFYCw&s" alt="Bobotie" class="rounded-lg mb-4">
+                    <div class="menu-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:bg-gray-50">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAHunXnkIoLttmY3bb82AhPBc6diSPeFYCw&s" alt="Bobotie" class="rounded-lg">
+                        </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Classic Bobotie</h3>
                         <p class="text-gray-600 mb-4">A savory baked dish of curried mince with a creamy golden topping, served with yellow rice and sambal.</p>
                         <span class="text-lg font-bold text-orange-700">R150</span>
                     </div>
 
                     <!-- Menu Item 2: Braai Platter -->
-                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
-                        <img src="https://cdn.foodloversmarket.co.za/wp-content/uploads/20240118210509/1200x628-3-3.png" alt="Braai Platter" class="rounded-lg mb-4">
+                    <div class="menu-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:bg-gray-50">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="https://cdn.foodloversmarket.co.za/wp-content/uploads/20240118210509/1200x628-3-3.png" alt="Braai Platter" class="rounded-lg">
+                        </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">The Ultimate Braai Platter</h3>
                         <p class="text-gray-600 mb-4">A selection of traditional braai favorites including boerewors, marinated lamb chops, and chakalaka.</p>
                         <span class="text-lg font-bold text-orange-700">R250</span>
                     </div>
 
                     <!-- Menu Item 3: Malva Pudding -->
-                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUvDClXVPYD38swUJccJKVDGA9mjpjRMkKA&s" alt="Malva Pudding" class="rounded-lg mb-4">
+                    <div class="menu-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:bg-gray-50">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUvDClXVPYD38swUJccJKVDGA9mjpjRMkKA&s" alt="Malva Pudding" class="rounded-lg">
+                        </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Malva Pudding</h3>
                         <p class="text-gray-600 mb-4">A warm, sweet and sticky dessert, served with a rich caramel sauce and a dollop of vanilla ice cream.</p>
                         <span class="text-lg font-bold text-orange-700">R85</span>
@@ -110,24 +137,30 @@
                 <h3 class="text-2xl md:text-3xl font-bold mb-10 text-gray-800">Refreshing Beverages</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Drink Item 1: Amarula Coffee -->
-                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
-                        <img src="https://crushmag-online.com/wp-content/uploads/2022/08/naked-amarula-1x560-1.jpg" alt="Amarula Coffee" class="rounded-lg mb-4">
+                    <div class="menu-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:bg-gray-50">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="https://crushmag-online.com/wp-content/uploads/2022/08/naked-amarula-1x560-1.jpg" alt="Amarula Coffee" class="rounded-lg">
+                        </div>
                         <h4 class="text-xl font-bold text-gray-800 mb-2">Amarula Coffee</h4>
                         <p class="text-gray-600 mb-4">A decadent coffee with a shot of South Africa's finest cream liqueur, Amarula. Served hot or on the rocks.</p>
                         <span class="text-lg font-bold text-orange-700">R75</span>
                     </div>
 
                     <!-- Drink Item 2: Rooibos Iced Tea -->
-                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
-                        <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aWNlZCUyMHRlYXxlbnwwfDB8MHx8fDI%3D" alt="Rooibos Iced Tea" class="rounded-lg mb-4">
+                    <div class="menu-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:bg-gray-50">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aWNlZCUyMHRlYXxlbnwwfDB8MHx8fDI%3D" alt="Rooibos Iced Tea" class="rounded-lg">
+                        </div>
                         <h4 class="text-xl font-bold text-gray-800 mb-2">Rooibos Iced Tea</h4>
                         <p class="text-gray-600 mb-4">A refreshing South African classic, brewed with fresh rooibos tea and a hint of lemon and mint.</p>
                         <span class="text-lg font-bold text-orange-700">R40</span>
                     </div>
 
                     <!-- Drink Item 3: Local Craft Beer -->
-                    <div class="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVZOqDnP1ApqI8CGjbvLEEZDj2HWp6nZyaA&s" alt="Local Craft Beer" class="rounded-lg mb-4">
+                    <div class="menu-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:bg-gray-50">
+                        <div class="overflow-hidden rounded-lg mb-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVZOqDnP1ApqI8CGjbvLEEZDj2HWp6nZyaA&s" alt="Local Craft Beer" class="rounded-lg">
+                        </div>
                         <h4 class="text-xl font-bold text-gray-800 mb-2">Local Craft Beer</h4>
                         <p class="text-gray-600 mb-4">A rotating selection of the best craft beers from local South African breweries.</p>
                         <span class="text-lg font-bold text-orange-700">R60</span>
@@ -145,7 +178,7 @@
         <section id="contact" class="py-16">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">Visit Us</h2>
-                <div class="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto flex flex-col md:flex-row gap-8">
+                <div class="contact-card bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto flex flex-col md:flex-row gap-8">
                     <!-- Contact Info -->
                     <div class="w-full md:w-1/2 text-left">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Contact Information</h3>
